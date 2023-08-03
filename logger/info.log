@@ -1,0 +1,67 @@
+{"level":"info","message":"mongodb connected successfully"}
+{"level":"info","message":"mongodb connected successfully"}
+{"level":"info","message":"mongodb connected successfully,1691043343786"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 11:50:42 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 11:52:28 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"email was sent successfully to this sample@gmail.com id at Thu Aug 03 2023 11:52:44 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 11:53:48 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"email was sent successfully to this sample@gmail.com id at Thu Aug 03 2023 11:54:46 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 11:57:18 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"email was sent successfully to this sample@gmail.com id at Thu Aug 03 2023 11:57:38 GMT+0530 (India Standard Time)"}
+{"level":"error","message":"mongodb connection error,MongoServerSelectionError: getaddrinfo EAI_AGAIN localhos"}
+{"level":"error","message":"mongodb connection error,MongoServerSelectionError: getaddrinfo EAI_AGAIN localhos"}
+{"level":"error","message":"mongodb connection error,MongoServerSelectionError: getaddrinfo EAI_AGAIN localhos"}
+{"level":"error","message":"mongodb connection error,MongoServerSelectionError: getaddrinfo EAI_AGAIN localhos"}
+{"level":"error","message":"mongodb connection error,MongoServerSelectionError: getaddrinfo EAI_AGAIN localhos"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 12:33:00 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 12:34:44 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 12:36:03 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 12:43:18 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 12:44:36 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 12:47:22 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 12:47:45 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 16:07:05 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 16:09:54 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 16:24:19 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 16:26:36 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 16:28:13 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 16:28:37 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 17:14:00 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 17:16:42 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 17:19:12 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 17:20:11 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:11:01 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"admin data was inserted in db"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:32:44 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:33:33 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"admin data was inserted in db"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:37:07 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:37:32 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:37:57 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"admin data was inserted in db"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:44:23 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"admin data was inserted in db"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:47:15 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:47:50 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:48:36 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:53:48 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:56:55 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 18:59:59 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"email was sent successfully to this 46sample@gmail.com id at Thu Aug 03 2023 19:00:56 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:08:22 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:11:01 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"email was sent successfully to this 464sample@gmail.com id at Thu Aug 03 2023 19:11:55 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:12:38 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:15:58 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"email was sent successfully to this 464sample@gmail.com id at Thu Aug 03 2023 19:16:48 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:18:59 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:19:42 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"email was sent successfully to this 464sample@gmail.com id at Thu Aug 03 2023 19:20:03 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:22:14 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:30:51 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:32:53 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:33:26 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:34:28 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:35:51 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"mongodb connected successfully,Thu Aug 03 2023 19:42:31 GMT+0530 (India Standard Time)"}
+{"level":"info","message":"email was sent successfully to this 464sample@gmail.com id at Thu Aug 03 2023 19:42:53 GMT+0530 (India Standard Time)"}

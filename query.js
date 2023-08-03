@@ -4,7 +4,7 @@ module.exports = {
   insertMany: function (collection, dataToInsert) {
     return new Promise(async function (resolve, reject) {
       try {
-        var database = db.get();
+        var database = await db.get();
         const result = await database
           .collection(collection)
           .insertMany(dataToInsert);
@@ -17,7 +17,7 @@ module.exports = {
   getAll: function (collection, projection = {}) {
     return new Promise(async function (resolve, reject) {
       try {
-        const database = db.get();
+        const database = await db.get();
         const result = await database.collection(collection).find({}).toArray();
         resolve(result);
       } catch (err) {
@@ -28,7 +28,7 @@ module.exports = {
   update: function (collection, id, updatedData) {
     return new Promise(async function (resolve, reject) {
       try {
-        const database = db.get();
+        const database = await db.get();
         const result = await database
           .collection(collection)
           .updateOne(id, updatedData);
@@ -41,8 +41,21 @@ module.exports = {
   delete: function (collection, id) {
     return new Promise(async function (resolve, reject) {
       try {
-        const database = db.get();
-        const result = await database.collection(collection).deleteOne(id);
+        var database = await db.get();
+        var result = await database.collection(collection).deleteOne(id);
+        resolve(result);
+      } catch (err) {
+        reject(err);
+      }
+    });
+  },
+  findOne: function (collection, id, projection = {}) {
+    return new Promise(async function (resolve, reject) {
+      try {
+        const database = await db.get();
+        const result = await database
+          .collection(collection)
+          .findOne(id, projection);
         resolve(result);
       } catch (err) {
         reject(err);
