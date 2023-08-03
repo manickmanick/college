@@ -1,5 +1,7 @@
 const db = require("../../query");
 var collection = "student";
+const sharp = require("sharp");
+var logger = require("../../logger/log");
 const { ObjectId } = require("mongodb");
 
 module.exports = {
@@ -64,5 +66,45 @@ module.exports = {
       .catch(function (err) {
         res.status(400).json(err);
       });
+  },
+  findByPage: function (req, res) {
+    db.findByPage(
+      collection,
+      {},
+      {},
+      parseInt(req.params.limit),
+      parseInt(req.params.pageNo),
+    )
+      .then(function (result) {
+        res.status(200).json(result);
+      })
+      .catch(function (err) {
+        res.status(400).json(err);
+      });
+  },
+  insertSampleData: function (req, res) {
+    db.insertTestData(collection)
+      .then(function (result) {
+        res.status(200).json(result);
+      })
+      .catch(function (err) {
+        res.status(400).json(err);
+      });
+  },
+  uploadPicture: function (req, res) {
+    const originalFilePath = req.file.path;
+    const lowQualityFilePath = originalFilePath.replace(
+      "uploads/",
+      "uploads/lowQuality/",
+    ); // Store low-quality images in a separate folder
+    sharp(originalFilePath)
+      .resize(200, 200) // Resize to a lower resolution as needed
+      .jpeg({ quality: 50 }) // Adjust quality as needed for JPEG format
+      .toFile(lowQualityFilePath, (err) => {
+        if (err) {
+          logger.error("Error generating low-quality image:", err);
+        }
+      });
+    res.json("uploaded");
   },
 };

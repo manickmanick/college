@@ -32,6 +32,11 @@ db.connect(async function (db) {
 app.use("/auth", auth.verifyToken);
 app.use("/", require("./routes"));
 
+//file upload purpose
+app.get("/fileUpload", function (req, res) {
+  res.sendFile(__dirname + "/public/index.html");
+});
+
 app.listen(5000, function () {
   console.log(`server running on port 5000`);
 });

@@ -5,6 +5,8 @@ const student = require("./model/students/controller");
 const admin = require("./model/admin/controller");
 const nodeMailer = require("nodemailer");
 var logger = require("./logger/log");
+const path = require("path");
+const multer = require("multer");
 const auth = require("./authorization/auth");
 let mailTransporter = nodeMailer.createTransport({
   service: "gmail",
@@ -13,6 +15,18 @@ let mailTransporter = nodeMailer.createTransport({
     pass: process.env.mail_password,
   },
 });
+
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "uploads/");
+  },
+  filename: function (req, file, cb) {
+    console.log(file);
+    cb(null, Date.now() + path.extname(file.originalname));
+  },
+});
+
+const upload = multer({ storage: storage });
 
 function sendMail(req, res) {
   let mailDetails = {
@@ -32,13 +46,13 @@ function sendMail(req, res) {
 
 //university route
 
-router.post("/addUniversity", university.insertUniversities);
+router.post("/auth/addUniversity", university.insertUniversities);
 
-router.get("/getUniversity", university.getUniversity);
+router.get("/auth/getUniversity", university.getUniversity);
 
-router.post("/updateUniversity", university.updateUniversity);
+router.post("/auth/updateUniversity", university.updateUniversity);
 
-router.post("/deleteUniversity/:id", university.deleteUniversity);
+router.post("/auth/deleteUniversity/:id", university.deleteUniversity);
 
 //student route
 
@@ -51,6 +65,19 @@ router.get("/auth/getStudents", student.getStudent); //get all students
 router.post("/auth/deleteStudent/:id", student.deleteStudent);
 
 router.post("/auth/findStudent/:id", student.findStudentById);
+
+// get limited number of student for pagination purpose
+
+router.post("/auth/getLimitedStudents/:limit/:pageNo", student.findByPage);
+
+//check sample data for pagination
+router.get("/insertSampleStudents", student.insertSampleData);
+
+router.post(
+  "/students/upload",
+  upload.single("profilePicture"),
+  student.uploadPicture,
+);
 
 //admin route
 

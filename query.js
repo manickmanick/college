@@ -1,6 +1,29 @@
 const db = require("./database");
 
 module.exports = {
+  insertTestData: async function (collectionName) {
+    return new Promise(async function (resolve, reject) {
+      arr = [];
+      for (i = 0; i <= 100; i++) {
+        obj = {
+          name: i,
+          email: "sample@gmail.com",
+          phoneNumber: "123456789",
+          role: "User",
+          status: "Active",
+          createdOn: new Date().toISOString(),
+        };
+        arr.push(obj);
+      }
+      try {
+        var database = await db.get();
+        var result = await database.collection(collectionName).insertMany(arr);
+        resolve(result);
+      } catch (err) {
+        reject(err);
+      }
+    });
+  },
   insertMany: function (collection, dataToInsert) {
     return new Promise(async function (resolve, reject) {
       try {
@@ -60,6 +83,40 @@ module.exports = {
       } catch (err) {
         reject(err);
       }
+    });
+  },
+  findByPage: function (
+    collection,
+    query,
+    projection,
+    resultsPerPage,
+    desiredPage,
+  ) {
+    return new Promise(async function (resolve, reject) {
+      try {
+        const page = desiredPage ? desiredPage : 1;
+        var database = await db.get();
+        var totalDocuments = await database
+          .collection(collection)
+          .countDocuments();
+        const totalPages = Math.ceil(totalDocuments / resultsPerPage);
+        const skip = (page - 1) * resultsPerPage;
+        const result = await database
+          .collection(collection)
+          .find()
+          .skip(skip)
+          .limit(resultsPerPage)
+          .toArray();
+        resolve(result);
+      } catch (err) {
+        reject(err);
+      }
+    });
+  },
+  count: function (collection) {
+    return new Promise(async function (resolve, reject) {
+      var database = await db.get();
+      var result = await database.collection(collection).countDocuments();
     });
   },
 };
